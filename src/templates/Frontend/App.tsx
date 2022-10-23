@@ -1,4 +1,6 @@
 import Header from '../../organisms/Header';
+import Banner from '../../molecules/banner';
+import Box from '../../molecules/box';
 import * as S from './styles'
 
 type FrontendProps = {
@@ -6,9 +8,15 @@ type FrontendProps = {
 };
 
 const Frontend = ({children}: FrontendProps) => {
-    return <S.Container>
+    return (
+    <div>
+      <S.Container>
         <Header></Header>
-    </S.Container>
+      </S.Container>
+      <Banner></Banner>
+      <Box></Box>
+    </div>
+    )
 };
 
 export default Frontend;
