@@ -7,10 +7,10 @@ export const flex = styled.main`
     justify-content: center;
     flex-direction:row;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 `
 
 export const caixa = styled.main`
-    
     width: 377px;
     height: 56px;
     border: 1px solid #000000;
@@ -24,7 +24,7 @@ export const break_flex = styled.main`
 
 export const texto = styled.main`
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     margin-bottom: 20px
 `

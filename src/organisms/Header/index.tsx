@@ -4,10 +4,12 @@ import Menu from '../../molecules/menu';
 
 
 const Header = () => {
-    return (<S.Cabecalho>
+    return (<S.div>
+    <S.Cabecalho>
         <Logo></Logo>
         <Menu></Menu>
-    </S.Cabecalho>)
+    </S.Cabecalho>
+    </S.div>)
 };
 
 export default Header;

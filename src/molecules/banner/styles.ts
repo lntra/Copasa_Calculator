@@ -24,3 +24,7 @@ export const titulo = styled.main`
     line-height: 54px;
     color: #FFFFFF;
 `
+
+export const banner = styled.main`
+    
+`

@@ -1,22 +1,23 @@
 import Header from '../../organisms/Header';
 import Banner from '../../molecules/banner';
 import Box from '../../molecules/box';
-import * as S from './styles'
+import Footer from '../../organisms/Footer';
+import Table from '../../organisms/Table';
 
 type FrontendProps = {
   children: React.ReactNode;  
 };
 
 const Frontend = ({children}: FrontendProps) => {
-    return (
+    return <>
     <div>
-      <S.Container>
-        <Header></Header>
-      </S.Container>
+      <Header></Header>
       <Banner></Banner>
       <Box></Box>
+      <Table></Table>
+      <Footer></Footer>
     </div>
-    )
+    </>
 };
 
 export default Frontend;

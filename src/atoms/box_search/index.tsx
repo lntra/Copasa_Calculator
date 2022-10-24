@@ -1,6 +1,5 @@
 import * as S from './styles'
 import plus from '../../assets/plus-solid.svg'
-import { hover } from '@testing-library/user-event/dist/hover'
 
 const Box_Search = () => {
 return <>
