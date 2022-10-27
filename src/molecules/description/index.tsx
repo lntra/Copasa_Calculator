@@ -1,12 +1,12 @@
 import * as S from './styles'
 import Descriptive from '../../atoms/descriptive';
-import Table from '../../organisms/Table';
+import TableFonte from '../../organisms/TableData';
 
 const Description = () => {
     return  (
         <S.Grid>
-            <Descriptive></Descriptive>
-            <Table></Table>
+                <Descriptive></Descriptive>
+                <TableFonte></TableFonte>
         </S.Grid>
     )
 }
