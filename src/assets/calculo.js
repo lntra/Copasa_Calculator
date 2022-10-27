@@ -1,3 +1,4 @@
+//pegar num de input .ts
 var num = 6;
 var aux = 0;
 var preco = 0;
