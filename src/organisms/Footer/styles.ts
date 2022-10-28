@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Footer = styled.main`
     width: 100%;
     height: 56px;
-    position: absolute;
+    margin-top: 100px;
     bottom: 0;
     background: linear-gradient(90deg, #002F52 0%, #326589 91.46%);
     display:flex;

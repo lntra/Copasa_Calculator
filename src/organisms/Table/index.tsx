@@ -1,7 +1,11 @@
 import * as S from './styles'
-
+import rows from "./rows.json"
+import { useState } from 'react';
 
 const Table = () => {
+
+    const [data,setData] = useState(rows);
+
     return (<S.div>
             <S.Tables>
                     <tr>
@@ -11,13 +15,16 @@ const Table = () => {
                         <S.th>Esgoto</S.th>
                         <S.th>Total</S.th>
                     </tr>
-                    <tr>
-                        <S.td>20</S.td>
-                        <S.td>15</S.td>
-                        <S.td>80</S.td>
-                        <S.td>100</S.td>
-                        <S.td>215</S.td>
-                    </tr>
+                    {data.map((event) => (
+                        <tr>
+                            <S.td>{event.gasto}</S.td>
+                            <S.td>{event.fixo}</S.td>
+                            <S.td>{event.agua}</S.td>
+                            <S.td>{event.esgoto}</S.td>
+                            <S.td>{event.total}</S.td>
+                        </tr>
+                    ))}
+                   
             </S.Tables>
         </S.div>)
 };
