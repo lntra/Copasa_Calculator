@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Footer = styled.main`
-    width: 100%;
+    width: 100vw;
     height: 56px;
-    margin-top: 100px;
+    position: fixed;
     bottom: 0;
-    background: linear-gradient(90deg, #002F52 0%, #326589 91.46%);
+    background-image: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     display:flex;
     justify-content:center;
     align-items:center;
+    clear:both
 `
 
 export const texto = styled.main`

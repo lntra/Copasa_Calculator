@@ -24,9 +24,7 @@ export const Tables = styled.table`
 `
 
 export const div = styled.div`
-    width: 100%;
-    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
 `
+

@@ -6,8 +6,8 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Frontend children={undefined} />} ></Route>
-      <Route path='info' element={<Info children={undefined} />} ></Route>
+      <Route path='/' element={<Frontend/>} ></Route>
+      <Route path='info' element={<Info/>} ></Route>
     </Routes>
   );
 }

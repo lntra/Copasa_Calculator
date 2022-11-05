@@ -13,9 +13,8 @@ export const texto = styled.p`
 export const box = styled.div`
     height: 100%;
     margin-left: 80px;
-    background: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    background-image: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     mix-blend-mode: normal;
-    opacity: 0.75;
     display: flex;
     text-align: ;
     justify-content:baseline;

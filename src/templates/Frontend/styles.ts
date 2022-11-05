@@ -41,13 +41,6 @@ export const center = styled.main`
     align-content: center;
 `
 
-export const transition = styled.main`
-    
-    &:hover{
-        filter: invert(69%) sepia(36%) saturate(6855%) hue-rotate(184deg) brightness(102%) contrast(92%);
-    }
-`
-
 export const form = styled.form`
     display:flex;
     align-items:center;
@@ -65,9 +58,11 @@ export const input = styled.input`
     font-size: 24px;
     margin-right: 20px;
     outline: none;
+    
 `
 
 export const inputButton = styled.button`
+
     width: 113px;
     height: 56px;
     border: 1px solid #000000;
@@ -75,7 +70,10 @@ export const inputButton = styled.button`
     text-align: center;
     background: #FFFFFF;
     cursor:pointer;
-    transition: all 0.20s ease-out;
+    outline: none;
+    &:hover{
+        filter: invert(69%) sepia(36%) saturate(6855%) hue-rotate(184deg) brightness(102%) contrast(92%);
+    }
 `
 
 export const th = styled.th`
@@ -106,3 +104,4 @@ export const div = styled.div`
     justify-content: center;
     margin-bottom: 112px;
 `
+

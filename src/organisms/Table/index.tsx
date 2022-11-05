@@ -24,7 +24,6 @@ const Table = () => {
                             <S.td>{event.total}</S.td>
                         </tr>
                     ))}
-                   
             </S.Tables>
         </S.div>)
 };

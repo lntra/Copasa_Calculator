@@ -2,12 +2,8 @@ import Header from '../../organisms/Header';
 import Footer from '../../organisms/Footer';
 import Text from '../../atoms/text';
 import Description from '../../molecules/description';
-
-type InfoProps = {
-    children: React.ReactNode;  
-  };
   
-  const Info = ({children}: InfoProps) => {
+  const Info = () => {
       return <>
         <Header></Header>
         <Text></Text>
