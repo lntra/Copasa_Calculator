@@ -98,13 +98,13 @@ function Frontend() {
                         <S.th>Esgoto</S.th>
                         <S.th>Total</S.th>
                     </tr>
-                    {data.filter(v => v.gasto !== 0).map((event) => (
+                    {data.filter(v => v.gasto !== 0 && v.total !== "").map((event) => (
                         <tr>
                             <S.td>{event.gasto}m³</S.td>
-                            <S.td>{event.fixo}</S.td>
-                            <S.td>{event.agua}</S.td>
-                            <S.td>{event.esgoto}</S.td>
-                            <S.td>{event.total}</S.td>
+                            <S.td>R${event.fixo}</S.td>
+                            <S.td>R${event.agua}</S.td>
+                            <S.td>R${event.esgoto}</S.td>
+                            <S.td>R${event.total}</S.td>
                         </tr>
                     ))}
             </S.Tables>
