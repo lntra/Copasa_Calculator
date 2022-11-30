@@ -9,29 +9,45 @@ var esgoto = [1.35,2.876,4.457,6.084,7.739,9.441]
 //custos
 var precoFixoAgua = (17.61);
 var precoFixoEsgoto = (13.03);
-var precoEsgoto = 0;
 var precoAgua = 0;
+var precoEsgoto = 0;
+var precoAguaTemporario = 0;
+var precoEsgotoTemporario = 0;
+
+//Os temporários existem para mostrar o preço em certa categoria da tabela de forma isolada
 
 //for para pegar todos os alcances de gastos
 for(var categoriaAux = 1; num > categorias[categoriaAux];categoriaAux++){
     var dif = categorias[categoriaAux] - categorias[categoriaAux - 1];
-    precoAgua += (dif * agua[categoriaAux - 1]);
-    precoEsgoto += (dif * esgoto[categoriaAux - 1]);
+    precoAguaTemporario = (dif * agua[categoriaAux - 1]);
+    precoAgua += precoAguaTemporario;
+    console.log("Na categoria " + categoriaAux + " o preço da água é: " + precoAguaTemporario);
+    precoEsgotoTemporario = (dif * esgoto[categoriaAux - 1]);
+    precoEsgoto += precoEsgotoTemporario
+    console.log("Na categoria " + categoriaAux + " o preço do esgoto é: " + precoEsgotoTemporario);
 }
 
 //lidando com números caso sobre para um dos alcances
 if (num <= categorias[categoriaAux]){
         var operacao = num - (categorias[categoriaAux - 1])
     if( operacao > 0){
-        precoAgua += (operacao * agua[categoriaAux - 1]);
-        precoEsgoto += (operacao * esgoto[categoriaAux - 1])
+        precoAguaTemporario = (operacao * agua[categoriaAux - 1]);
+        precoAgua += precoAguaTemporario;
+        console.log("Na categoria " + categoriaAux + " o preço da água é: " + precoAguaTemporario);
+        precoEsgotoTemporario = (operacao * esgoto[categoriaAux - 1])
+        precoEsgoto += precoEsgotoTemporario
+        console.log("Na categoria " + categoriaAux + " o preço do esgoto é: " + precoEsgotoTemporario);
     }    
 }
 // lidando com números acima das categorias, ou seja 40+
 else{
     var operacao = num - (categorias[5])
-    precoAgua += (operacao * agua[5]);
-    precoEsgoto += (operacao * esgoto[5])
+    precoAguaTemporario = (operacao * agua[5]);
+    precoAgua += precoAguaTemporario;
+    console.log("Na categoria acima de 40 " + " o preço da água é: " + precoAguaTemporario);
+    precoEsgotoTemporario = (operacao * esgoto[5])
+    precoEsgoto += precoEsgotoTemporario
+    console.log("Na categoria acima de 40 " + " o preço do esgoto é: " + precoEsgotoTemporario);
 }
 
 precoAgua += precoFixoAgua;
