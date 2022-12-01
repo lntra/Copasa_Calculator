@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Copasa_Calculator/static/js/main.d35a3bd5.js",
+    "main.js": "/Copasa_Calculator/static/js/main.d7649ce5.js",
     "static/media/1938.jpg": "/Copasa_Calculator/static/media/1938.f392d69e5e0001e63aa7.jpg",
     "static/media/github.svg": "/Copasa_Calculator/static/media/github.171b179b9abcd796dce0204e58bb5c5f.svg",
     "index.html": "/Copasa_Calculator/index.html",
@@ -8,9 +8,9 @@
     "static/media/house-solid.svg": "/Copasa_Calculator/static/media/house-solid.c104e2819c58a9a9198e7ad2a43f7b24.svg",
     "static/media/circle-info-solid.svg": "/Copasa_Calculator/static/media/circle-info-solid.e90515ddc1e9fa2e117dca03f91b86c3.svg",
     "static/media/plus-solid.svg": "/Copasa_Calculator/static/media/plus-solid.f3ca0f0290870ffb457a7aed0a2acab9.svg",
-    "main.d35a3bd5.js.map": "/Copasa_Calculator/static/js/main.d35a3bd5.js.map"
+    "main.d7649ce5.js.map": "/Copasa_Calculator/static/js/main.d7649ce5.js.map"
   },
   "entrypoints": [
-    "static/js/main.d35a3bd5.js"
+    "static/js/main.d7649ce5.js"
   ]
 }
